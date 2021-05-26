@@ -1,6 +1,6 @@
 {
-  "name": "rutas",
-  "version": "0.1.0",
+  "name": "capitalizarme",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@tdc-cl/x-form": "^3.11.1",
