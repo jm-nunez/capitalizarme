@@ -5,16 +5,17 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Contacto from './paginas/Contacto';
-import Inicio from './paginas/Inicio';
-import Nosotros from './paginas/Nosotros';
+import Contacto from './pages/Contacto';
+import Inicio from './pages/Inicio';
+import Nosotros from './pages/Nosotros';
+import User from './components/features/Login/User';
 
 function App() {
   return (
     <Router>
     <div className="container">
     
-    
+
     <div className="btn-group"> 
     <Link to="/" className="btn">Inicio</Link>
     <Link to="/Nosotros" className="btn">Nosotros</Link>
@@ -22,6 +23,9 @@ function App() {
     </div>
      <hr/>
      <Switch>
+     <Route path="/nosotros/:id">
+        <User/>
+      </Route>
       <Route path="/contacto">
         <Contacto/>
       </Route>
